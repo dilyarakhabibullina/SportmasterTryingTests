@@ -1,0 +1,12 @@
+language: java
+jdk: oraclejdk11
+
+script: mvn -e verify
+
+notifications:
+  e-mail:
+    resipients:
+      - khdilyara@rambler.ru
+      on_failure: always
+      on_success: change
+      
